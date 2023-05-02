@@ -23,7 +23,7 @@ O projeto será feito utilizando React.js, a princípio para o back-end usaremos
 2: Pessoas que estão à procura de novos animais.
 
 <h3>Objetivo:</h3>
--Facilitar comunicação entre doadores e pessoas que desejam adotar pets.
+- Facilitar comunicação entre doadores e pessoas que desejam adotar pets.
 
 <h3>Descrição:</h3>
 - O projeto consiste em um site que facilite tanto a exibição, a procura, o resgate e a doação de animais, utilizando de menus fáceis de navegar e removendo a necessidade de ir até diversos locais procurando um animal desejado e, porfim, acabando com a necessidade de criação de 'correntes' no instagram e outras redes sociais.
