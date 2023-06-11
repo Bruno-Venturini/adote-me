@@ -6,8 +6,6 @@ Grupo composto por:
 1- Angelo José da Rosa
 2- Bruno Frelo Venturini
 3- Gabriel Ferreira Guinzani
-4- 
-5- 
 
 <h3>Tecnologias:</h3>
 O projeto será feito utilizando React.js, a princípio para o back-end usaremos SpringBoot e para banco de dados MySQL ou Firebase.
