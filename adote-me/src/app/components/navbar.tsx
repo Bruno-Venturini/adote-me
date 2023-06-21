@@ -10,12 +10,12 @@ export function Navbar() {
                 </div>
                 <div className="flex-none gap-2">
                     <div className="dropdown dropdown-end">
-                        <label tabIndex="0" className="btn btn-ghost btn-circle avatar">
+                        <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                             <div className="w-10 rounded-full">
                                 <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png"/>
                             </div>
                         </label>
-                        <ul tabIndex="0"
+                        <ul tabIndex={0}
                             className="mt-3 p-2 shadow menu menu-sm dropdown-content bg-primary rounded-box w-52">
                             <li>
                                 <a className="justify-between">
