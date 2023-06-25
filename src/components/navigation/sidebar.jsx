@@ -15,7 +15,6 @@ export function Sidebar() {
             </div>
             <div className="flex-full mb-20 h-screen w-64 px-5">
                 <div className="bg-primary h-screen artboard phone-sm rounded-lg text-center">
-                    a
                 </div>
             </div>
         </div>

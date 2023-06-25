@@ -1,6 +1,6 @@
-import {Navbar} from "@/app/components/navbar";
-import {Sidebar} from "@/app/components/sidebar";
-import {Dashboard} from "@/app/components/dashboard";
+import {Navbar} from "@/components/navigation/navbar";
+import {Sidebar} from "./sidebar";
+import {Dashboard} from "./dashboard";
 
 export function Navigation(props) {
     return(
