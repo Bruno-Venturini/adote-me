@@ -6,9 +6,9 @@ export function Sidebar() {
                 <ul className="menu p-4 w-64 h-full bg-base-100 text-base-content">
                     <div>
                         <div>
-                            <button className="row-span-1 btn btn-accent w-full px-5">
+                            <a href="/login" className="row-span-1 btn btn-accent w-full px-5">
                                 Login
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </ul>
