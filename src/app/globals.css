@@ -46,3 +46,9 @@ body {
 .artboard.phone-sm {
   width: auto;
 }
+
+.artboard.phone-square {
+  width: 70%;
+  height: 60%;
+  border-radius: 3rem;
+}
