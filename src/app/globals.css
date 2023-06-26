@@ -27,15 +27,15 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
+  width: 8px;
+  height: 8px;
 }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(13deg, #7bcfeb 14%, #e685d3 64%);
+  background: #FFD2D2;
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(13deg, #c7ceff 14%, #f9d4ff 64%);
+  background: #F26363;
 }
 ::-webkit-scrollbar-track {
   background: #ffffff;
@@ -50,7 +50,23 @@ body {
 .artboard.phone-square {
   width: 70%;
   height: 60%;
-  border-radius: 3rem;
+}
+
+.artboard.phone-rectangle-sm {
+  width: 80%;
+  height: 50px;
+}
+
+.artboard.phone-rectangle-md {
+  width: 80%;
+  height: 250px;
+}
+
+.artboard.phone-rectangle-lg {
+  width: 90%;
+  height: 100px;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
 }
 .artboard.phone-square-lg {
   width: 70%;
