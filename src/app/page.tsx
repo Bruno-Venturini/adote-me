@@ -88,7 +88,7 @@ export default function Home() {
                             </div>
                         </div>
                         <div id="slide3" className="carousel-item relative w-full rounded-b-2xl">
-                            <img src="https://www.cidademarketing.com.br/marketing/wp-content/uploads/2021/08/vivo_pets-scaled.jpg" className="w-full border rounded-b-2xl"/>
+                            <img src="https://blog.tudodebicho.com.br/wp-content/uploads/2023/05/Simple-Self-Care-Blog-Post-Banner-2-1-1600x450.png" className="w-full border rounded-b-2xl"/>
                             <div
                                 className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                                 <a href="#slide2" className="btn btn-circle btn-ghost hover:btn-secondary border-secondary text-white hover:opacity-50">❮</a>
