@@ -7,14 +7,16 @@ class Animal {
     sexo: string;
     descricao: string;
     anos: number;
+    imagem: string;
 
-    constructor(nome: string, tipoanimal: string, raca: string, sexo: string, descricao: string, anos: number) {
+    constructor(nome: string, tipoanimal: string, raca: string, sexo: string, descricao: string, anos: number, imagem: string) {
         this.nome = nome
         this.tipoanimal = tipoanimal
         this.raca = raca
         this.sexo = sexo
         this.descricao = descricao
         this.anos = anos
+        this.imagem = imagem
       }
 }
 
@@ -61,8 +63,8 @@ export function cadastroUsuario (nome: string, usuario: string, email: string, n
     localStorage.setItem('usuario', JSON.stringify(usuarios.map(usuario => ({...usuario}))));
 }
 
-export function cadastroAnimal(nome: string, tipoanimal: string, raca: string, sexo: string, descricao: string, anos: number) {
-    let reg = new Animal(nome, tipoanimal, raca, sexo, descricao, anos);
+export function cadastroAnimal(nome: string, tipoanimal: string, raca: string, sexo: string, descricao: string, anos: number, imagem: string) {
+    let reg = new Animal(nome, tipoanimal, raca, sexo, descricao, anos, imagem);
 
     let local = localStorage.getItem('animal');
     let json = JSON.parse(local ?? '[]');
@@ -75,7 +77,8 @@ export function cadastroAnimal(nome: string, tipoanimal: string, raca: string, s
             animalJson.raca,
             animalJson.sexo,
             animalJson.descricao,
-            animalJson.anos
+            animalJson.anos,
+            animalJson.imagem
         );
     });
 
@@ -96,7 +99,8 @@ export function recuperarAnimais(): Animal[] {
                 animalJson.raca,
                 animalJson.sexo,
                 animalJson.descricao,
-                animalJson.anos
+                animalJson.anos,
+                animalJson.imagem
             );
         });
     }
