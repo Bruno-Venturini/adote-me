@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import {Logo} from "@/components/logo";
 import {ReturnArrow} from "@/components/returnarrow";
-import {cadastroUsuario} from "@/script.ts";
+import {cadastroUsuario} from "@/script";
 
 export default function Cadastro() {
     const [nome, setNome] = useState("");

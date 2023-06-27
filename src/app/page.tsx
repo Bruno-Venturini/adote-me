@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from "react";
 import {Navigation} from "@/components/navigation/navigation";
-import {Perfil} from "@/app/perfil/usuario/page";
+import Perfil from "@/app/perfil/usuario/page";
 import {Navbar} from "@/components/navigation/navbar";
 import {Carousel} from "@/components/carousel"
 import { PrismaClient } from '@prisma/client'
@@ -74,7 +74,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="flex mt-5 m-auto artboard phone-rectangle-sm rounded-full p-5 shadow-lg justify-between bg-primary items-center">
+                <div className="flex mt-5 m-auto artboard phone-rectangle-sm rounded-full p-5 shadow-lg justify-between bg-secondary items-center">
 
                 </div>
                 <Carousel></Carousel>

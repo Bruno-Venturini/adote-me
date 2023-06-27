@@ -20,7 +20,7 @@ export default function PerfilAnimal() {
                         <div className="grid gap-y-1 grid-cols-2 grid-rows-12">
                             <div className="flex col-start-1 col-span-2 row-start-1 mt-10 auto-rows-min text-black">
                                 <ReturnArrow/>
-                                <div className="bg-secondary input ml-5 mr-5 w-full text-center font-bold text-xl">
+                                <div className="bg-secondary input ml-5 mr-5 w-full text-center font-bold text-xl text-white rounded-2xl">
                                     <p>{nome}</p> 
                                 </div>
                             </div>
@@ -50,8 +50,7 @@ export default function PerfilAnimal() {
                         </div>
                     </div>
                     <div className="col-start-2">
-                        <img src="https://i.imgur.com/DL9HxNB.jpeg" 
-                            className="border rounded-b-2xl w-full h-full"/>
+                        <img src="https://i.imgur.com/DL9HxNB.jpeg" className="border rounded-br-2xl w-full h-full"/>
                     </div>
                 </div>
             </div>
