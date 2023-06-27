@@ -2,24 +2,19 @@
 import React, { useState } from "react";
 import {Logo} from "@/components/logo";
 import {ReturnArrow} from "@/components/returnarrow";
+import {cadastroUsuario} from "@/script.ts";
 
 export default function Cadastro() {
-    const [nome, setNome] = useState();
-    const [usuario, setUsuario] = useState();
-    const [email, setEmail] = useState();
-    const [nascimento, setNascimento] = useState();
-    const [endereco, setEndereco] = useState();
-    const [senha, setSenha] = useState();
-    const [representacao, setRepresentacao] = useState();
+    const [nome, setNome] = useState("");
+    const [usuario, setUsuario] = useState("");
+    const [email, setEmail] = useState("");
+    const [nascimento, setNascimento] = useState(new Date());
+    const [endereco, setEndereco] = useState("");
+    const [senha, setSenha] = useState("");
+    const [representacao, setRepresentacao] = useState("");
 
     let submitCadastro = () => {
-        console.log(nome);
-        console.log(usuario);
-        console.log(email);
-        console.log(nascimento);
-        console.log(endereco);
-        console.log(senha);
-        console.log(representacao);
+        cadastroUsuario(nome, usuario, email, nascimento, endereco, senha, representacao)
     }
 
     return (

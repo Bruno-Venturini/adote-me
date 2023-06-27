@@ -2,22 +2,18 @@
 import React, { useState } from "react";
 import { Navbar } from "@/components/navigation/navbar";
 import { Logo } from "@/components/logo";
+import { cadastroAnimal } from "@/script";
 
 export default function Animal() {
-    const [nome, setNome] = useState();
-    const [tipoanimal, setTipoanimal] = useState();
-    const [raca, setRaca] = useState();
-    const [sexo, setSexo] = useState();
-    const [descricao, setDescricao] = useState();
-    const [anos, setAnos] = useState();
+    const [nome, setNome] = useState("");
+    const [tipoanimal, setTipoanimal] = useState("");
+    const [raca, setRaca] = useState("");
+    const [sexo, setSexo] = useState("");
+    const [descricao, setDescricao] = useState("");
+    const [anos, setAnos] = useState(0);
     
     let submitAnimal = () => {
-        console.log(nome);
-        console.log(tipoanimal);
-        console.log(raca);
-        console.log(sexo);
-        console.log(descricao);
-        console.log(anos);
+        cadastroAnimal(nome, tipoanimal, raca, sexo, descricao, anos)
     }
     
     return(
