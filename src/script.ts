@@ -1,55 +1,105 @@
-async function main() {
-    const user = await prisma.usuario.create({
-        data: {
-            nome: 'Alice',
-            usuario: 'Alice',
-            endereco: 'Alice',
-            senha: 'Alice',
-            email: 'alice@prisma.io',
-        },
-    })
+import { list } from "postcss";
 
+class Animal {
+    nome: string;
+    tipoanimal: string;
+    raca: string;
+    sexo: string;
+    descricao: string;
+    anos: number;
 
-    const users = await prisma.usuario.findMany()
+    constructor(nome: string, tipoanimal: string, raca: string, sexo: string, descricao: string, anos: number) {
+        this.nome = nome
+        this.tipoanimal = tipoanimal
+        this.raca = raca
+        this.sexo = sexo
+        this.descricao = descricao
+        this.anos = anos
+      }
 }
 
-export async function cadastroUsuario (nome: string, usuario: string, email: string, nascimento: Date, endereco: string, senha: string, representacao: string) {
-    const users = await prisma.usuario.findMany();
-    
-    await prisma.usuario.create({
-        data: {
-            nome: nome,
-            usuario: usuario,
-            email: email,
-            nascimento: nascimento,
-            endereco: endereco,
-            senha: senha,
-            representacao: representacao
-        },
-    })
+class Usuario {
+    nome: string;
+    usuario: string;
+    email: string;
+    nascimento: Date;
+    endereco: string;
+    senha: string;
+    representacao: string;
+
+    constructor(nome: string, usuario: string, email: string, nascimento: Date, endereco: string, senha: string, representacao: string) {    
+        this.nome = nome
+        this.usuario = usuario
+        this.email = email
+        this.nascimento = nascimento
+        this.endereco = endereco
+        this.senha = senha
+        this.representacao = representacao
+      }
 }
 
-export async function cadastroAnimal (nome: string, tipoanimal: string, raca: string, sexo: string, descricao: string, anos: number) {
-    const users = await prisma.usuario.findMany();
-    
-    await prisma.animal.create({
-        data: {
-            nome: nome,
-            tipoanimal: tipoanimal,
-            raca: raca,
-            sexo: sexo,
-            descricao: descricao,
-            anos: anos
-        },
-    })
+export function cadastroUsuario (nome: string, usuario: string, email: string, nascimento: Date, endereco: string, senha: string, representacao: string) {
+    let reg = new Usuario(nome, usuario, email, nascimento, endereco, senha, representacao);
+    let local = localStorage.getItem('usuario');
+    let json = JSON.parse(local ?? '[]');
+    let usuarios: Usuario[] = [];
+
+    usuarios = json.map((usuarioJson: any) => {
+        return new Usuario(
+            usuarioJson.nome,
+            usuarioJson.usuario,
+            usuarioJson.email,
+            new Date(usuarioJson.nascimento),
+            usuarioJson.endereco,
+            usuarioJson.senha,
+            usuarioJson.representacao
+        );
+    });
+
+    usuarios.push(reg);
+
+    localStorage.setItem('usuario', JSON.stringify(usuarios.map(usuario => ({...usuario}))));
 }
 
-main()
-    .then(async () => {
-        await prisma.$disconnect()
-    })
-    .catch(async (e) => {
-        console.error(e)
-        await prisma.$disconnect()
-        process.exit(1)
-    })
+export function cadastroAnimal(nome: string, tipoanimal: string, raca: string, sexo: string, descricao: string, anos: number) {
+    let reg = new Animal(nome, tipoanimal, raca, sexo, descricao, anos);
+
+    let local = localStorage.getItem('animal');
+    let json = JSON.parse(local ?? '[]');
+    let animais: Animal[] = [];
+
+    animais = json.map((animalJson: any) => {
+        return new Animal(
+            animalJson.nome,
+            animalJson.tipoanimal,
+            animalJson.raca,
+            animalJson.sexo,
+            animalJson.descricao,
+            animalJson.anos
+        );
+    });
+
+    animais.push(reg);
+
+    localStorage.setItem('animal', JSON.stringify(animais.map(animal => ({ ...animal }))));
+}
+
+export function recuperarAnimais(): Animal[] {
+    let animaisJson = localStorage.getItem('animal');
+    let animais: Animal[] = [];
+
+    if (animaisJson) {
+        animais = JSON.parse(animaisJson).map((animalJson: any) => {
+            return new Animal(
+                animalJson.nome,
+                animalJson.tipoanimal,
+                animalJson.raca,
+                animalJson.sexo,
+                animalJson.descricao,
+                animalJson.anos
+            );
+        });
+    }
+
+    return animais;
+}
