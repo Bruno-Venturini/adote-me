@@ -15,6 +15,9 @@ export default function Cadastro() {
 
     let submitCadastro = () => {
         cadastroUsuario(nome, usuario, email, nascimento, endereco, senha, representacao)
+
+        alert("Usuário cadastrado com sucesso!");
+        window.location.href = "/";
     }
 
     return (

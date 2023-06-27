@@ -14,6 +14,9 @@ export default function Animal() {
     
     let submitAnimal = () => {
         cadastroAnimal(nome, tipoanimal, raca, sexo, descricao, anos)
+
+        alert("Animal cadastrado com sucesso!");
+        window.location.href = "/";
     }
     
     return(
