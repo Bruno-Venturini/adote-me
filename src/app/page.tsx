@@ -4,8 +4,27 @@ import {Navigation} from "@/components/navigation/navigation";
 import {Perfil} from "@/app/perfil/usuario/page";
 import {Navbar} from "@/components/navigation/navbar";
 import {Carousel} from "@/components/carousel"
+import { PrismaClient } from '@prisma/client'
+
 
 export default function Home() {
+    const prisma = new PrismaClient()
+
+    async function main() {
+        console.log("?");
+    }
+
+    main()
+        .then(async () => {
+            console.log("?")
+            await prisma.$disconnect()
+        })
+        .catch(async (e) => {
+            console.error(e)
+            await prisma.$disconnect()
+            process.exit(1)
+        })
+
     const cards = [
         {
             image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK2nG24AYDm6FOEC7jIfgubO96GbRso2Xshu1f8abSYQ&s",
