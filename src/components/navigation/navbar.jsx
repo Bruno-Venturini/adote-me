@@ -46,8 +46,16 @@ export function Navbar(props) {
                                 Profile
                             </a>
                         </li>
-                        <li><a>Settings</a></li>
-                        <li><a>Logout</a></li>
+                        <li>
+                            <a href="/cadastro/animal">
+                                Novo animal
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/login">
+                                Logout
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
