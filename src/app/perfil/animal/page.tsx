@@ -4,13 +4,13 @@ import { Navbar } from "@/components/navigation/navbar";
 import { ReturnArrow } from "@/components/returnarrow";
 
 export default function PerfilAnimal() {
-    const [nome, setNome] = useState("Nome do animal");
-    const [tipoanimal, setTipoanimal] = useState("Cachorro");
+    const [nome, setNome] = useState("Jinx");
+    const [tipoanimal, setTipoanimal] = useState("Gato");
     const [raca, setRaca] = useState("Vira-lata");
     const [sexo, setSexo] = useState("Fêmea");
-    const [descricao, setDescricao] = useState("Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum ");
+    const [descricao, setDescricao] = useState("A vesguinha favorita de todos do twitter");
     const [anos, setAnos] = useState("6");
-    const [imagem, setImagem] = useState("");
+    const [imagem, setImagem] = useState("https://s2.glbimg.com/Zvhsuo9uDzqEHDYoV2vqFoMKvOs=/smart/e.glbimg.com/og/ed/f/original/2022/04/26/271406372_1094832554665405_7239099820711983754_n.jpg");
 
     return(
         <div className="bg-white h-screen w-screen">
