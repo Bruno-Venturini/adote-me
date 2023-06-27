@@ -5,6 +5,7 @@ import Perfil from "@/app/perfil/usuario/page";
 import {Navbar} from "@/components/navigation/navbar";
 import {Carousel} from "@/components/carousel"
 import { PrismaClient } from '@prisma/client'
+import {Card} from "@/components/card";
 
 
 export default function Home() {
@@ -74,10 +75,29 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="flex mt-5 m-auto artboard phone-rectangle-sm rounded-full p-5 shadow-lg justify-between bg-secondary items-center">
-
+                <div className="flex mt-5 m-auto artboard phone-rectangle-sm rounded-full text-sm p-5 shadow-lg justify-between bg-secondary items-center">
+                    <div className="flex flex-col w-full lg:flex-row">
+                        <div className="grid flex-grow card bg-secondary mt-1 mb-1 place-items-center">Cadastre seu perfil e seus animais
+                        </div>
+                        <div className="divider lg:divider-horizontal">--></div>
+                        <div className="grid flex-grow card bg-secondary mt-1 mb-1 place-items-center">Busque por um novo amigo
+                        </div>
+                        <div className="divider lg:divider-horizontal">|</div>
+                        <div className="grid flex-grow card bg-secondary mt-1 mb-1 place-items-center">Ou entre em contato com o atual responsável
+                        </div>
+                    </div>
                 </div>
-                <Carousel></Carousel>
+                <Carousel>
+                    <Card path="https://paradepets.com/.image/t_share/MTkxMzY1Nzg4NDEyMjI1MTIy/samoyed.jpg" nome="Sophia" alt="Sophia" descricao="Uma cachorrinha dócil para te acompanhar no cotidiano!"></Card>
+                    <Card path="https://paradepets.com/.image/t_share/MTkxMzY1Nzg4NDEyMjI1MTIy/samoyed.jpg" nome="Sophia" alt="Sophia" descricao="Uma cachorrinha dócil para te acompanhar no cotidiano!"></Card>
+                    <Card path="https://paradepets.com/.image/t_share/MTkxMzY1Nzg4NDEyMjI1MTIy/samoyed.jpg" nome="Sophia" alt="Sophia" descricao="Uma cachorrinha dócil para te acompanhar no cotidiano!"></Card>
+                    <Card path="https://paradepets.com/.image/t_share/MTkxMzY1Nzg4NDEyMjI1MTIy/samoyed.jpg" nome="Sophia" alt="Sophia" descricao="Uma cachorrinha dócil para te acompanhar no cotidiano!"></Card>
+                    <Card path="https://paradepets.com/.image/t_share/MTkxMzY1Nzg4NDEyMjI1MTIy/samoyed.jpg" nome="Sophia" alt="Sophia" descricao="Uma cachorrinha dócil para te acompanhar no cotidiano!"></Card>
+                    <Card path="https://paradepets.com/.image/t_share/MTkxMzY1Nzg4NDEyMjI1MTIy/samoyed.jpg" nome="Sophia" alt="Sophia" descricao="Uma cachorrinha dócil para te acompanhar no cotidiano!"></Card>
+                    <Card path="https://paradepets.com/.image/t_share/MTkxMzY1Nzg4NDEyMjI1MTIy/samoyed.jpg" nome="Sophia" alt="Sophia" descricao="Uma cachorrinha dócil para te acompanhar no cotidiano!"></Card>
+                    <Card path="https://paradepets.com/.image/t_share/MTkxMzY1Nzg4NDEyMjI1MTIy/samoyed.jpg" nome="Sophia" alt="Sophia" descricao="Uma cachorrinha dócil para te acompanhar no cotidiano!"></Card>
+                    <Card path="https://paradepets.com/.image/t_share/MTkxMzY1Nzg4NDEyMjI1MTIy/samoyed.jpg" nome="Sophia" alt="Sophia" descricao="Uma cachorrinha dócil para te acompanhar no cotidiano!"></Card>
+                </Carousel>
             </div>
         </div>
     )

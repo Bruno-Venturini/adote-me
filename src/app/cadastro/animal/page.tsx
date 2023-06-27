@@ -11,7 +11,8 @@ export default function Animal() {
     const [sexo, setSexo] = useState("");
     const [descricao, setDescricao] = useState("");
     const [anos, setAnos] = useState(0);
-    
+    const [imagem, setImagem] = useState("");
+
     let submitAnimal = () => {
         cadastroAnimal(nome, tipoanimal, raca, sexo, descricao, anos)
 
@@ -61,6 +62,10 @@ export default function Animal() {
                     <div className="mt-4 row-start-4 col-start-2 col-span-2 flex place-content-start items-center">
                         <textarea placeholder="Descrição do animal..." value={descricao} onChange={e => setDescricao(e.target.value)}
                             className="textarea bg-primary input input-md input-secondary w-8/12 max-w-xs placeholder-gray-500 text-black"/>
+                    </div>
+                    <div className="row-start-5 col-start-2 col-end-5 mt-4 flex items-center place-content-center">
+                        <input type="text" placeholder="Endereço da imagem..." value={imagem} onChange={e => setImagem(e.target.value)}
+                               className="bg-primary input input-md input-secondary w-full placeholder-gray-500 text-black"/>
                     </div>
                     <div className="row-start-7 col-start-3 mt-4 flex items-center place-content-center">
                         <button className="btn btn-secondary hover:btn-accent text-white" onClick={submitAnimal}>Cadastrar</button>

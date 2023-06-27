@@ -12,29 +12,38 @@ export default function Perfil() {
                     <div className="flex row-start-1 col-start-1 mt-5">
                         <ReturnArrow/>
                     </div>
-                    <div className="flex place-content-center row-start-1 col-start-2 col-span-2 mt-5">
-                        <button className="btn rounded-full w-10/12 btn-secondary text-white">Página inicial</button>
+                    <div className="flex place-content-start row-start-1 col-start-2 col-span-2 mt-5">
+                        <div className="flex relative right-5  mt-5 artboard phone-rectangle-sm rounded-full shadow-lg  justify-center bg-secondary items-center place-content-center">
+                            <p className="text-center font-bold">NOME</p>
+                        </div>
+                    </div>
+                    <div className="flex place-content-center row-start-1 col-start-4 col-span-1 mt-5">
+                        <div className="flex relative mt-5 artboard phone-rectangle-sm rounded-full shadow-lg  justify-center bg-whit border-primary border-2 items-center place-content-center">
+                            <p className="text-center font-bold text-black">TIPO</p>
+                        </div>
                     </div>
                     <div className="flex place-content-center row-span-full col-start-5 col-span-full place-content-center h-full border-accent">
                         <img className="h-full w-full rounded-br-2xl" src="https://media.istockphoto.com/id/1369510216/pt/foto/carefree-beautiful-latin-woman-relaxing-on-beach.jpg?s=612x612&w=0&k=20&c=JeHv2iyuVJRF_IEBICUmvyg6w35RU8mkRxO19YbIy8A="/>
                     </div>
                     <div className="mt-5 row-start-2 col-start-1 col-end-4 items-start place-content-center">
-                        <div className="flex relative left-5 mt-5 artboard phone-rectangle-sm rounded-full shadow-lg justify-between bg-primary items-center">
-
+                        <div className="flex relative left-5 mt-5 artboard phone-rectangle-sm rounded-full shadow-lg justify-center bg-primary items-center">
+                            <p className="text-center font-bold text-black">EMAIL</p>
                         </div>
                     </div>
                     <div className="mt-5 row-start-2 col-start-4 col-end-5 items-start place-content-center">
-                        <div className="flex relative left-5 mt-5 artboard phone-rectangle-sm rounded-full shadow-lg justify-between bg-primary items-center">
-
+                        <div className="flex relative left-5 mt-5 artboard phone-rectangle-sm rounded-full shadow-lg justify-center bg-primary items-center">
+                            <p className="text-center font-bold text-black">TELEFONE</p>
                         </div>
                     </div>
                     <div className="mt-5 row-start-3 col-start-1 col-end-5 w-full items-start">
-                        <div className="flex relative left-5 auto artboard phone-rectangle-100 rounded-full shadow-lg justify-between bg-primary items-center">
-
+                        <div className="flex relative left-5 auto artboard phone-rectangle-100 rounded-full shadow-lg justify-center bg-primary items-center">
+                            <p className="text-center font-bold text-black">ENDEREÇO</p>
                         </div>
                     </div>
                     <div className="flex row-start-4 col-start-2 col-span-2 -mt-10 place-content-center">
-                        <button className="btn rounded-full w-7/12 btn-secondary text-white">Animais</button>
+                        <div className="flex relative left-5 artboard phone-rectangle-sm rounded-full shadow-lg  justify-center bg-secondary items-center place-content-center">
+                            <p className="text-center font-bold">ANIMAIS</p>
+                        </div>
                     </div>
                     <div className="row-start-4 col-start-1 col-end-5 row-span-2 -mb-52">
                         <Carousel></Carousel>

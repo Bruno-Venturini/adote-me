@@ -8,49 +8,51 @@ export default function PerfilAnimal() {
     const [tipoanimal, setTipoanimal] = useState("Cachorro");
     const [raca, setRaca] = useState("Vira-lata");
     const [sexo, setSexo] = useState("Fêmea");
-    const [descricao, setDescricao] = useState("Descrição do animal");
+    const [descricao, setDescricao] = useState("Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum ");
     const [anos, setAnos] = useState("6");
-    
+    const [imagem, setImagem] = useState("");
+
     return(
         <div className="bg-white h-screen w-screen">
             <div className="flex flex-col flex-wrap">
                 <Navbar/>
-                <div className="flex flex-col w-full m-auto artboard phone-rectangle-xl grid grid-cols-2 grid-flow-col rounded-b-2xl shadow-2xlxl bg-white shadow-2xl mt-5">
-                    <div className="col-start-1">
-                        <div className="grid gap-y-1 grid-cols-2 grid-rows-12">
-                            <div className="flex col-start-1 col-span-2 row-start-1 mt-10 auto-rows-min text-black">
-                                <ReturnArrow/>
-                                <div className="bg-secondary input ml-5 mr-5 w-full text-center font-bold text-xl text-white rounded-2xl">
-                                    <p>{nome}</p> 
-                                </div>
-                            </div>
-                            <div className="flex col-start-1 col-span-2 row-start-2 mt-5 items-center place-content-center">
-                                <div className="bg-secondary input ml-5 mr-5 w-1/2 text-center font-bold text-xl">
-                                    <p>{raca}</p> 
-                                </div>
-                            </div>
-                            <div className="col-start-1 col-span-2 row-start-3 mt-10"></div>
-
-                            <div className="flex col-start-1 row-start-4 mt-5 mb-10 mr-5 place-content-end">
-                                <div className="bg-primary input input-md input-secondary w-8/12 max-w-xs placeholder-gray-500 text-black">
-                                    {anos}
-                                </div>
-                            </div>
-                            <div className="flex col-start-2 row-start-4 mt-5 mb-10 ml-5 place-content-start">
-                                <div className="bg-primary input input-md input-secondary w-8/12 max-w-xs placeholder-gray-500 text-black">
-                                    {sexo}
-                                </div>
-                            </div>
-
-                            <div className="col-start-1 col-span-2 row-start-8 row-span-4 -mb-20">
-                                <div className="bg-secondary input ml-5 mr-5 w-full h-full text-center font-bold text-xl">
-                                    <p>{descricao}</p> 
-                                </div>
-                            </div>
+                <div className="grid grid-rows-5 grid-cols-7 m-auto artboard phone-rectangle-xl rounded-b-2xl justify-between shadow-2xl bg-white items-startshadow-2xl">
+                    <div className="flex row-start-1 col-start-1 mt-5 relative place-content-start">
+                        <ReturnArrow/>
+                    </div>
+                    <div className="flex place-content-start row-start-1 col-start-2 col-span-2 mt-5">
+                        <div className="flex relative artboard phone-rectangle-sm rounded-full shadow-lg justify-center bg-secondary items-center place-content-center">
+                            <p className="text-center font-bold">{nome}</p>
                         </div>
                     </div>
-                    <div className="col-start-2">
-                        <img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1xw:0.74975xh;center,top&resize=1200:*" className="border rounded-br-2xl w-full h-full"/>
+                    <div className="flex place-content-start row-start-1 col-start-4 col-span-1 mt-5 ">
+                        <div className="flex relative artboard phone-rectangle-sm rounded-full shadow-lg  justify-center bg-white border-primary border-2 items-center place-content-center">
+                            <p className="text-center font-bold text-black">{raca}</p>
+                        </div>
+                    </div>
+                    <div className="flex place-content-center row-span-full col-start-5 col-span-full place-content-center h-full border-accent">
+                        <img src={imagem} className="border rounded-br-2xl w-full h-full"/>
+                    </div>
+                    <div className="flex place-content-center row-start-2 row-span-3 col-start-1 col-end-5">
+                        <div className="flex relative artboard phone-rectangle-w-sm text-black rounded-3xl shadow-lg justify-center bg-white border-primary border-2 items-start place-content-start">
+                            <p className="p-5">{descricao}</p>
+                        </div>
+                    </div>
+                    <div className="flex place-content-center row-start-5 col-start-2 mt-5">
+                        <div className="flex flex-col relative right-20 artboard phone-rectangle-sm rounded-full shadow-lg  justify-center bg-white border-primary border-2 items-center">
+                            <div className="-mb-2.5"><p className="text-center font-bold text-lg text-black">{anos}</p></div>
+                            <div><p className="text-center font-bold text-lg text-black">Anos</p></div>
+                        </div>
+                    </div>
+                    <div className="flex place-content-center row-start-5 col-start-3 mt-5">
+                        <div className="flex flex-col relative artboard right-20 phone-rectangle-sm rounded-full shadow-lg  justify-center bg-white border-primary border-2 items-center">
+                            <div><p className="text-center font-bold text-lg text-black">{tipoanimal}</p></div>
+                        </div>
+                    </div>
+                    <div className="flex place-content-center row-start-5 col-start-4 mt-5">
+                        <div className="flex flex-col relative artboard right-20 phone-rectangle-sm rounded-full shadow-lg  justify-center bg-white border-primary border-2 items-center">
+                            <div><p className="text-center font-bold text-lg text-black">{sexo}</p></div>
+                        </div>
                     </div>
                 </div>
             </div>
