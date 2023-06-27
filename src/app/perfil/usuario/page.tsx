@@ -16,7 +16,7 @@ export default function Perfil() {
                         <button className="btn rounded-full w-10/12 btn-secondary text-white">Página inicial</button>
                     </div>
                     <div className="flex place-content-center row-span-full col-start-5 col-span-full place-content-center h-full border-accent">
-                        <img className="h-full w-full rounded-br-2xl" src="https://storage.satc.edu.br/arquivos/fotosalunos/338515.png"/>
+                        <img className="h-full w-full rounded-br-2xl" src="https://media.istockphoto.com/id/1369510216/pt/foto/carefree-beautiful-latin-woman-relaxing-on-beach.jpg?s=612x612&w=0&k=20&c=JeHv2iyuVJRF_IEBICUmvyg6w35RU8mkRxO19YbIy8A="/>
                     </div>
                     <div className="mt-5 row-start-2 col-start-1 col-end-4 items-start place-content-center">
                         <div className="flex relative left-5 mt-5 artboard phone-rectangle-sm rounded-full shadow-lg justify-between bg-primary items-center">

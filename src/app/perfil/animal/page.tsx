@@ -50,7 +50,7 @@ export default function PerfilAnimal() {
                         </div>
                     </div>
                     <div className="col-start-2">
-                        <img src="https://i.imgur.com/DL9HxNB.jpeg" className="border rounded-br-2xl w-full h-full"/>
+                        <img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1xw:0.74975xh;center,top&resize=1200:*" className="border rounded-br-2xl w-full h-full"/>
                     </div>
                 </div>
             </div>
