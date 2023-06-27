@@ -12,7 +12,7 @@ export function Carousel() {
                     <h2 className="card-title text-accent ">Nome Pet</h2>
                     <p className="text-accent">If a dog chews shoes whose shoes does he choose?</p>
                     <div className="card-actions justify-end">
-                        <button className="btn btn-secondary text-white">Me Adote</button>
+                        <button href="/perfil/animal" className="btn btn-secondary text-white">Me Adote</button>
                     </div>
                 </div>
             </div>
