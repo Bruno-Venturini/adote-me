@@ -2,9 +2,9 @@ import React from "react";
 
 export function Card(props) {
     return(
-        <div className="card w-96 bg-primary shadow-xl image-full">
-            <figure className="bg-primary w-96">
-                <img src={props.path} alt={props.alt}/>
+        <div className="card w-96 h-fit max-h-64 bg-primary shadow-xl image-full">
+            <figure className="bg-primary w-96 h-fit max-h-64">
+                <img layout='fill' className="h-fit max-h-64" objectFit='contain' src={props.path} alt={props.alt}/>
             </figure>
             <div className="card-body w-96 text-accent">
                 <h2 className="card-title text-accent ">{props.nome}</h2>
