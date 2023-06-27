@@ -42,9 +42,8 @@ export function Navbar(props) {
                     <ul tabIndex="0"
                         className="mt-3 p-2 shadow menu menu-sm dropdown-content bg-primary rounded-box w-64 z-50">
                         <li>
-                            <a className="justify-between">
+                            <a href="/perfil/usuario">
                                 Profile
-                                <span className="badge">New</span>
                             </a>
                         </li>
                         <li><a>Settings</a></li>
