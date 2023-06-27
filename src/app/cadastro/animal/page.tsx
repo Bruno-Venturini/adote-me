@@ -14,7 +14,7 @@ export default function Animal() {
     const [imagem, setImagem] = useState("");
 
     let submitAnimal = () => {
-        cadastroAnimal(nome, tipoanimal, raca, sexo, descricao, anos)
+        cadastroAnimal(nome, tipoanimal, raca, sexo, descricao, anos, imagem)
 
         alert("Animal cadastrado com sucesso!");
         window.location.href = "/";
