@@ -4,7 +4,7 @@ import {Logo} from "@/components/logo";
 export function Navbar(props) {
     return (
         <div
-            className="flex artboard basis-full m-auto phone-rectangle-lg w-full p-5 shadow-lg justify-between h-full bg-secondary items-center">
+            className="flex artboard basis-full m-auto phone-rectangle-nav w-full p-5 shadow-lg justify-between h-full bg-secondary items-center">
             <div className="relative left-16">
                 <Logo returnHome="true" width="41"></Logo>
             </div>

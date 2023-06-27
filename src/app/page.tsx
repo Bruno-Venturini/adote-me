@@ -38,10 +38,10 @@ export default function Home() {
         <div className="bg-white h-screen w-screen">
             <div className="flex flex-col flex-wrap">
                 <Navbar></Navbar>
-                <div className="flex flex-col m-auto artboard phone-rectangle-h-250px rounded-b-2xl shadow-2xlxl bg-primary">
+                <div className="flex flex-col m-auto artboard phone-rectangle-h-350px rounded-b-2xl shadow-2xlxl bg-primary">
                     <div className="carousel w-full">
                         <div id="slide1" className="carousel-item relative w-full rounded-b-2xl" >
-                            <img src="https://arcabrasil.org.br/wp-content/uploads/2016/08/banner.jpg" className="w-full border rounded-b-2xl"/>
+                            <img src="https://arcabrasil.org.br/wp-content/uploads/2016/08/banner.jpg" className="w-full rounded-b-2xl"/>
                             <div
                                 className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                                 <a href="#slide4" className="btn btn-circle btn-ghost hover:btn-secondary border-secondary text-white hover:opacity-50">❮</a>

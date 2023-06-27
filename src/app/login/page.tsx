@@ -24,11 +24,11 @@ export default function Login() {
                     <div className="row-start-7 col-start-2 mt-4 ml-2 flex items-center place-content-start">
 
                     </div>
-                    <div className="row-start-7 col-start-2 mt-4 ml-2 flex items-end place-content-start">
+                    <div className="row-start-7 col-start-2 mt-4 ml-2 flex items-end place-content-center">
                         <div>
                             <button className="btn btn-secondary hover:btn-accent">Login</button>
                         </div>
-                        <a href="/cadastro" className="font-medium text-blue-600 text-sm ml-2 dark:text-secondary hover:underline">
+                        <a href="/cadastro/usuario" className="font-medium text-blue-600 text-sm ml-2 dark:text-secondary hover:underline">
                             Não tem uma conta? cadastre-se
                         </a>
                     </div>

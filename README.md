@@ -8,8 +8,7 @@ Grupo composto por:
 3- Gabriel Ferreira Guinzani
 
 <h3>Tecnologias:</h3>
-O projeto será feito utilizando o framework Next.js e para banco de dados SQLite juntamente com o prisma, 
-para podermos controlar o banco pelo Next.
+O projeto será feito utilizando o framework Next.js.
 
 <h3>Estrutura do Projeto</h3>
 - Dashboard geral com pesquisa em todos os animais disponíveis mostrando informações mais genéricas;
