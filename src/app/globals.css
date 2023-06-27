@@ -56,15 +56,24 @@ body {
   width: 80%;
   height: 50px;
 }
+.artboard.phone-rectangle-100 {
+  width: 95%;
+  height: 50px;
+}
 
-.artboard.phone-rectangle-md {
+.artboard.phone-rectangle-50prct {
+  width: 80%;
+  height: 50%;
+}
+
+.artboard.phone-rectangle-h-250px {
   width: 80%;
   height: 250px;
 }
 
 .artboard.phone-rectangle-xl {
   width: 80%;
-  height: 500px;
+  height: 650px;
 }
 
 .artboard.phone-rectangle-lg {
